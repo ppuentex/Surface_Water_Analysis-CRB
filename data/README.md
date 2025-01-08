@@ -6,8 +6,10 @@ This folder contains all datasets for this study:
 ### Processed 
 1. CRB-Surface-Water
     - This folder contains the Global Surface Water, yearly water history tif files ONLY for the Coloraod River Basin from 1984 to 2021 
+    - Each file contains classifications for surface water; 1: , 2: , 3: , 4: 
 2. CRB-Urban-Buildup.tif 
     - This file is the build-up urban land changes in 2000 - 2021
+    - This file contains classifications for built-up; 225: ,226: 
 3. CRB-PDSI 
     - upper PDSI, lower PDSI, aggregated PDSI
 4. Shapefiles
