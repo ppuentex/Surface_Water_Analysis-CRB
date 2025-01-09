@@ -4,7 +4,8 @@ GitHub repository for "paper title": inundated area trend analysis in the Colora
 ## Getting Started
 - Using Poetry to create virtual environment. 
 
-``` Surface_Water_Analysis-CRB/
+``` 
+Surface_Water_Analysis-CRB/
 ├── README.md
 ├── LICENSE 
 ├── pyproject.toml 
@@ -40,4 +41,4 @@ GitHub repository for "paper title": inundated area trend analysis in the Colora
     ├── figures/
     │   ├── trend-analysis-figure1.png
     │   └── summary-statistics-figure2.png
-    └── generate-figures.ipynb ```
+    └── generate-figures.ipynb 
