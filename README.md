@@ -24,7 +24,7 @@ Surface_Water_Analysis-CRB/
 │   │   │   └── ...2021.tif
 │   │   ├── Shapefiles/
 │   │   │   ├── CRB_huc4.shp
-│   │   │   ├── western_states.shp
+│   │   │   ├── CRB_states.shp
 │   │   │   ├── CRB_major_rivers.shp
 │   │   │   └── CRB_urban_cities.shp
 │   │   ├── CRB_urban_buildup.tif
