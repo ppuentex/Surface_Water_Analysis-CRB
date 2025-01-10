@@ -2,6 +2,8 @@
 
 All datasets are descibed below, see `link to notebook (of showcasing datasets)`:
 
+Instructions on how the data was processed or analyzed is in the  `Codes/` folder. See `pre-processing.ipynb` for  `processed-data/` and `analysis.ipynb` for `analysis-data/`. 
+
 This folder contains all datasets for this study: 
 ### Processed 
 1. CRB-Surface-Water
@@ -13,7 +15,7 @@ This folder contains all datasets for this study:
 3. CRB-PDSI 
     - upper PDSI, lower PDSI, aggregated PDSI
 4. Shapefiles
-    - Watershed boundaries (HUCs), Western States, Main Cities, Main Rivers
+    - Watershed boundaries - CRB statelines only (HUCs), Western States, Main Cities, Main Rivers
 
 ### Analysis  
 1. Zonal_statistics.csv
