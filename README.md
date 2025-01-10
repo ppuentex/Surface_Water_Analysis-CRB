@@ -14,9 +14,9 @@ Surface_Water_Analysis-CRB/
 ├── data/
 │   ├── README.md
 │   ├── analysis-data/
-│	│	├── water_type_transitions_92_19.csv  
-│	│	├── water_type_transitions_02_19.csv  
-│   │   └── zonal_statistics.csv
+│	│  ├── water_type_transitions_92_19.csv  
+│	│  ├── water_type_transitions_02_19.csv  
+│   │  └── zonal_statistics.csv
 │   ├── processed-data/
 │   │	├── Yearly_Water_History_CRB/
 │	│	│	├── 1984.tif...
