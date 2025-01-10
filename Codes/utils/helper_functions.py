@@ -2,7 +2,7 @@ import rasterio
 import numpy as np 
 from scipy import stats 
 
-class RasterModeCalculator: 
+class RasterCalculator: 
     def __init__(self, input_files, output_file):
         ''' 
         Initialize the calculator with input and output file paths. 
