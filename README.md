@@ -19,14 +19,17 @@ Surface_Water_Analysis-CRB/
 │   │   └── zonal_statistics.csv
 │   ├── processed-data/
 │   │	├── Yearly_Water_History_CRB/
-│   │   │   ├── 1984.tif...
-│   │   │   ├── ...2002.tif...
-│   │   │   └── ...2021.tif
+│   │   │   ├── 1984_CRB.tif...
+│   │   │   ├── ...2002_CRB.tif...
+│   │   │   └── ...2021_CRB.tif
 │   │   ├── Shapefiles/
 │   │   │   ├── CRB_huc4.shp
 │   │   │   ├── CRB_states.shp
 │   │   │   ├── CRB_major_rivers.shp
 │   │   │   └── CRB_urban_cities.shp
+│   │   ├── output_mode_1992_1994.tif
+│   │   ├── output_mode_2002_2004.tif
+│   │   ├── output_mode_2019_2021.tif
 │   │   ├── CRB_urban_buildup.tif
 │   │   └── CRB_PDSI_84-21.csv
 │   └── data_previews.ipynb
