@@ -1,12 +1,47 @@
-# Surface_Water_Analysis-CRB
-GitHub repository for "paper title": inundated area trend analysis in the Colorado River Basin. 
+# Inundated Area Trend Analysis in the Colorado River Basin
+
+## Citation 
+By using this code or dataset in your research or projects, please cite the following publication: 
+
+> *Puente, P.,Condon, L. E., Long-term losses in surface water area in the Colorado River Basin, Nature Communication Earth & Environment (in consideration)*
+
+## Overview 
+This repository contains the code, regional data, and additional resources supporting the research described in the citation above. It provides the tools for analyzing and processing the [Global Surface Water Dataset]{https://global-surface-water.appspot.com/} focusing on the Colorado River Basin (CRB) and surface water area changes over time. 
 
 ## Getting Started
-- Using Poetry to create virtual environment. 
 
+### Prerequisites
+**Install Poetry**
+Poetry is required to manage dependencies in this project. If you don't have Poetry installed already, follow the instructions at [Poetry Installation](https://python-poetry.org/docs/#installing-with-the-official-installer). 
+
+### Instructions
+
+1. Clone this repository to your local machine in the terminal: 
+```git clone git@github.com:ppuentex/Surface_Water_Analysis-CRB.git ```
+
+2. Navigate to the repository directory: 
+```cd <your_local_folder>/Surface_Water_Analysis-CRB```
+
+3. Create and activate virtual environment: 
+    ```conda create -n <env_name>
+    conda activate <env_name>```
+
+4. Install dependencies with Poetry: 
+    Run the following command to populate your environment with all the necessary packages: 
+   ```poetry install```
+   This will download all dependencies specified in `pyproject.toml` file.  
+
+> **Note:** 
+> To add more packages to the environment, use Poetry's add command. For example: 
+> ```poetry add numpy ``` 
+
+
+
+## Repository Overview
+This repository includes the following structure. 
 ``` 
 Surface_Water_Analysis-CRB/
-├── README.md
+├── README.md #This file
 ├── LICENSE 
 ├── pyproject.toml 
 ├── poetry.lock
