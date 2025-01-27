@@ -39,17 +39,17 @@ cd <your_local_folder>/Surface_Water_Analysis-CRB
    ```
    This will download all dependencies specified in `pyproject.toml` file.  
 
-> **Note:** 
-> To add more packages to the environment, use Poetry's add command. For example: 
-> ```poetry add numpy ``` 
 
+> **Note:** 
+> To add more packages to the environment, use Poetry's `add` command. For example: 
+> ```poetry add numpy ``` 
 
 
 ## Repository Overview
 This repository includes the following structure. 
 ``` 
 Surface_Water_Analysis-CRB/
-├── README.md #This file
+├── README.md                   
 ├── LICENSE 
 ├── pyproject.toml 
 ├── poetry.lock
