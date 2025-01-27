@@ -11,7 +11,7 @@ This repository contains the code, regional data, and additional resources suppo
 ## Getting Started
 
 ### Prerequisites
-**Install Poetry**
+**Install Poetry** \
 Poetry is required to manage dependencies in this project. If you don't have Poetry installed already, follow the instructions at [Poetry Installation](https://python-poetry.org/docs/#installing-with-the-official-installer). 
 
 ### Instructions
