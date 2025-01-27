@@ -6,7 +6,7 @@ By using this code or dataset in your research or projects, please cite the foll
 > *Puente, P.,Condon, L. E., Long-term losses in surface water area in the Colorado River Basin, Nature Communication Earth & Environment (in consideration)*
 
 ## Overview 
-This repository contains the code, regional data, and additional resources supporting the research described in the citation above. It provides the tools for analyzing and processing the [Global Surface Water Dataset]{https://global-surface-water.appspot.com/} focusing on the Colorado River Basin (CRB) and surface water area changes over time. 
+This repository contains the code, regional data, and additional resources supporting the research described in the citation above. It provides the tools for analyzing and processing the [Global Surface Water Dataset](https://global-surface-water.appspot.com/) focusing on the Colorado River Basin (CRB) and surface water area changes over time. 
 
 ## Getting Started
 
@@ -17,18 +17,26 @@ Poetry is required to manage dependencies in this project. If you don't have Poe
 ### Instructions
 
 1. Clone this repository to your local machine in the terminal: 
-```git clone git@github.com:ppuentex/Surface_Water_Analysis-CRB.git ```
+```
+git clone git@github.com:ppuentex/Surface_Water_Analysis-CRB.git 
+```
 
 2. Navigate to the repository directory: 
-```cd <your_local_folder>/Surface_Water_Analysis-CRB```
+```
+cd <your_local_folder>/Surface_Water_Analysis-CRB
+```
 
 3. Create and activate virtual environment: 
-    ```conda create -n <env_name>
-    conda activate <env_name>```
+    ```
+    conda create -n <env_name>
+    conda activate <env_name>
+    ```
 
 4. Install dependencies with Poetry: 
     Run the following command to populate your environment with all the necessary packages: 
-   ```poetry install```
+   ```
+   poetry install
+   ```
    This will download all dependencies specified in `pyproject.toml` file.  
 
 > **Note:** 
