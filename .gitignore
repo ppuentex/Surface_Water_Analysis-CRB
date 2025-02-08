@@ -1,3 +1,6 @@
 .DS_Store
 __pycache__/
 *.pyc
+# Ignore virtual environment directories
+surface-water-env/
+.venv
