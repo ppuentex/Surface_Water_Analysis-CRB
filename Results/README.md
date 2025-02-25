@@ -1,8 +1,8 @@
 This folder contains a Jupyter notebook for generating the figures included in publication.
 
 1. Contents 
- - `generate_figures.ipynb` -> Jupyter notebook that produces the figures. All required  package dependencies and data dependencies are located in the top cells. 
- - `figures/` -> folder containing all saved figures. 
+ - `generate_figures.ipynb` &rarr; Jupyter notebook that produces the figures. All required  package dependencies and data dependencies are located in the top cells. 
+ - `figures/` &rarr; folder containing all saved figures. 
 
 2. Figure Descriptions 
  - `Basin-figure1a.jpg` -> The Colorado River Basin (CRB) with major rivers, major urban hubs, and average water type fractions as a pie chart for each huc4. 
