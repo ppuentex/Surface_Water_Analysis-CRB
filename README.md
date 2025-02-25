@@ -3,7 +3,7 @@
 ## Citation 
 By using this code or dataset in your research or projects, please cite the following publication: 
 
-> *Puente, P., Condon, L. E., Long-term losses in surface water area in the Colorado River Basin, Environmental Research Letters (in consideration) *
+> *Puente, P., Condon, L. E., Long-term losses in surface water area in the Colorado River Basin, Environmental Research Letters (in consideration)*
 
 ## Overview 
 This repository contains the code, regional data, and additional resources supporting the research described in the citation above. It provides the tools for analyzing and processing the [Global Surface Water Dataset](https://global-surface-water.appspot.com/) focusing on the Colorado River Basin (CRB) and surface water area changes over time. 
@@ -82,6 +82,7 @@ Surface_Water_Analysis-CRB/
 └── results/
     ├── README.md
     ├── figures/
-    │   ├── trend-analysis-figure1.png
-    │   └── summary-statistics-figure2.png
+    │   ├── Basin-figure1a.jpg
+    │   ├── ...
+    │   └── transition_urban_areas-figure6.jpg
     └── generate-figures.ipynb 
