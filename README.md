@@ -51,7 +51,6 @@ Surface_Water_Analysis-CRB/
 ├── requirements.txt
 ├── .gitignore
 ├── data/
-│   ├── README.md
 │   ├── analysis-data/
 │   │   ├── water_type_transitions_92_19.csv  
 │   │   ├── water_type_transitions_02_19.csv  
@@ -72,7 +71,7 @@ Surface_Water_Analysis-CRB/
 │   │   ├── output_mode_2019_2021.tif
 │   │   ├── CRB_urban_buildup.tif
 │   │   └── CRB_PDSI_84-21.csv
-│   └── data_previews.ipynb
+│   └── README.md
 ├── codes/
 │   ├── README.md
 │   ├── pre-processing.ipynb
