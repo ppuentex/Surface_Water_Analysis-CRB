@@ -141,8 +141,12 @@ class WaterTransitionAnalyzer:
         permanent_label = 3 
 
         # Create urban masks
-        stable_urban_mask = (land_class == 2)
-        gain_urban_mask = (land_class == 1)
+        stable_urban_mask = (land_class == 3)
+        gain_urban_mask = (land_class == 4)
+
+        #create crop masks
+        crop_gain_mask = (land_class == 1)
+        crop_loss_mask = (land_class == 2)
 
         # Create transition masks
         trans_masks = {
@@ -165,7 +169,12 @@ class WaterTransitionAnalyzer:
             gained_urban = np.sum(huc_mask & gain_urban_mask)
             stable_urban = np.sum(huc_mask & stable_urban_mask)
 
+            crop_gain = np.sum(huc_mask & crop_gain_mask)
+            crop_loss = np.sum(huc_mask & crop_loss_mask)
+
             percent_urbanization = ((gained_urban + stable_urban) / huc_count) * 100
+
+            percent_crop_change = ((crop_gain + crop_loss)/ huc_count) * 100
 
             # Calculate transition areas
             dry_area = sum(np.sum(huc_mask & trans_masks[key]) for key in ["perm_nowater", "perm_seasonal", "seasonal_nowater"])
@@ -181,19 +190,34 @@ class WaterTransitionAnalyzer:
             stable_wet_area = sum(np.sum(huc_mask & stable_urban_mask & trans_masks[key]) for key in ["seasonal_perm", "nowater_perm", "nowater_seasonal"])
             gained_wet_area = sum(np.sum(huc_mask & gain_urban_mask & trans_masks[key]) for key in ["seasonal_perm", "nowater_perm", "nowater_seasonal"])
 
+            #cropland specific water transitions 
+            crop_loss_dry_area = sum(np.sum(huc_mask & crop_loss_mask & trans_masks[key]) for key in ["perm_seasonal", "perm_nowater", "seasonal_nowater"])
+            crop_gain_dry_area = sum(np.sum(huc_mask & crop_gain_mask & trans_masks[key]) for key in ["perm_seasonal", "perm_nowater", "seasonal_nowater"])
+
+            crop_loss_wet_area = sum(np.sum(huc_mask & crop_loss_mask & trans_masks[key]) for key in ["seasonal_perm", "nowater_perm", "nowater_seasonal"])
+            crop_gain_wet_area = sum(np.sum(huc_mask & crop_gain_mask & trans_masks[key]) for key in ["seasonal_perm", "nowater_perm", "nowater_seasonal"])
+
+
             # Store results
             trans_results.append({
                 'huc4': huc_id,
                 'HUC_count': huc_count,
                 'gained_urban_area': (gained_urban * self.pixel_area) / self.km_scale,
                 'stable_urban_area': (stable_urban * self.pixel_area) / self.km_scale,
+                'crop_gain_area': (crop_gain * self.pixel_area) / self.km_scale,
+                'crop_loss_area': (crop_loss * self.pixel_area) / self.km_scale,
                 'dry_transition_area': total_dry_transition_area,
                 'wet_transition_area': total_wet_transition_area,
                 'stable_urban_dry_area': (stable_dry_area * self.pixel_area) / self.km_scale,
                 'gained_urban_dry_area': (gained_dry_area * self.pixel_area) / self.km_scale,
                 'stable_urban_wet_area': (stable_wet_area * self.pixel_area) / self.km_scale,
                 'gained_urban_wet_area': (gained_wet_area * self.pixel_area) / self.km_scale,
-                'urbanization_percent': percent_urbanization
+                'crop_loss_dry_area': (crop_loss_dry_area * self.pixel_area) / self.km_scale,
+                'crop_gain_dry_area': (crop_gain_dry_area * self.pixel_area) / self.km_scale,
+                'crop_loss_wet_area': (crop_loss_wet_area * self.pixel_area) / self.km_scale,
+                'crop_gain_wet_area': (crop_gain_wet_area * self.pixel_area) / self.km_scale,
+                'urbanization_percent': percent_urbanization,
+                'cropland_change_perc': percent_crop_change
             })
             print(f"Processed HUC {huc_id}")
         
